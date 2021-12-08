@@ -1,49 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masterwork</title>
 
-    <!-- BS4 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- Web Fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <!---------------------------------------- FONT AWESOME ---------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!---------------------------------------- BS4-CSS ---------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!---------------------------------------- WEB FONTS ---------------------------------------->
+    <link href="//fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!---------------------------------------- CSS ---------------------------------------->
     <link rel="stylesheet" href="./CSS/style.css">
 
 </head>
-<body>
-    <header></header>
+
+<body id="myBody">
+    <!---------------------------------------- HEADER ---------------------------------------->
+    <header class="masterMenu" id="header">
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="far fa-handshake"></i>
+                <span>Masterwork</span>
+            </a>
+            <button onclick="buttonSwitchMenu()" id="idSwitchButtonMenu" class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </span>
+            </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Pages
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#"><span>Blog posts</span></a>
+                            <a class="dropdown-item" href="#"><span>Blog single</span></a>
+                            <a class="dropdown-item" href="#"><span>Landing page</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <form class="form-inline ">
+                        <a href="#" class="btn " type="submit">Schedule a demo</a>
+                    </form>
+                </ul>
+            </div>
+            <button onclick="switchTheme()" class="btn" id="switchButton" title="Click to switch theme">
+                <i class="far fa-moon"></i>
+                <i class="far fa-sun"></i>
+            </button>
+        </nav>
+    </header>
+    <!---------------------------------------- START ---------------------------------------->
     <section class="start">
+        <div class="container-fluid">
+            <div class="start__content row ">
+                <div class="start__left col-lg-6 ">
+                    <h3>We Execute Our Ideas From Start to Finish</h3>
+                    <p>Building a beautiful interactive business for startups and innovative companies.</p>
+                    <a href="#" class="start__button btn ">
+                        Get started
+                    </a>
+                </div>
+                <div class="start__right col-lg-6">
+                    <img src="./image/main.png" alt="startpic">
+                </div>
+            </div>
+        </div>
     </section>
+    <!---------------------------------------- TOOL ---------------------------------------->
     <section class="tool">
-
+        <div class="container-fluid">
+            <div class="tool__content ">
+                <div class="tool__top">
+                    <h6>Why choose us</h6>
+                    <h3>Tools for business startup to professional</h3>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla
+                        mollis
+                        dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+                </div>
+                <div class="tool__down row">
+                    <div class="tool__item col-12 col-md-6 col-lg-4 ">
+                        <div class="tool__item__content">
+                            <img src="./image/s1.png" alt="tool1">
+                            <h3>Interactive</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </div>
+                    </div>
+                    <div class="tool__item col-12 col-md-6 col-lg-4 ">
+                        <div class="tool__item__content">
+                            <img src="./image/s2.png" alt="tool1">
+                            <h3>Business</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </div>
+                    </div>
+                    <div class="tool__item col-12 col-md-12 col-lg-4 ">
+                        <div class="tool__item__content">
+                            <img src="./image/s3.png" alt="tool1">
+                            <h3>Inspiration</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora rerum
+                                perspiciatis?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!---------------------------------------- ABOUT ---------------------------------------->
     <section class="about">
-
+        <div class="container-fluid">
+            <div class=" about__content">
+                <div class="about__top row">
+                    <div class="about__top--content col-12 col-lg-6">
+                        <h6>About our company</h6>
+                        <h3>The Best Choice For Your Successful Business!</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et est repellendus illum harum quam
+                            nihil totam reprehenderit! Ut sed eveniet quos! Asperiores officia, repudiandae similique
+                            reiciendis, ab est magnam esse nesciunt ea fuga facere voluptatem.
+                        </p>
+                        <a href="#" class="about__button btn ">
+                            Read More
+                        </a>
+                    </div>
+                    <div class="about__top--img col-12 col-lg-6">
+                        <img src="./image/about.jpg" alt="about">
+                    </div>
+                </div>
+                <div class="about__down row">
+                    <div class="about__item col-12 col-sm-6 col-lg-4">
+                        <div class="about__item__content">
+                            <h4>Happy Customers</h4>
+                            <span class="about__counter counter">10458</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item col-12 col-sm-6 col-lg-4">
+                        <div class="about__item__content">
+                            <h4>Winning Awards</h4>
+                            <span class="about__counter counter">890</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__item col-12 col-sm-6 col-lg-4">
+                        <div class="about__item__content">
+                            <h4>Completed Projects</h4>
+                            <span class="about__counter counter">5345
+                            </span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="readmore">
-
+    <!---------------------------------------- COMMIT ---------------------------------------->
+    <section class="commit">
+        <div class="container-fluid">
+            <div class="commit__content ">
+                <h2>We are true to ourselves, and commit to always perform at our best.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, doloribus atque. Corrupti
+                    exercitationem voluptatem ipsum iste consequuntur et vitae voluptas temporibus? Maxime dolores amet
+                    voluptatum illo consequatur placeat fugit ducimus.</p>
+                <a href="#" class="commit__button btn ">Read more</a>
+            </div>
+        </div>
     </section>
+    <!---------------------------------------- SOLUTION ---------------------------------------->
     <section class="solution">
-        
+        <div class="container-fluid solution__content">
+            <div class="solution__top">
+                <h6>WE ARE HERE FOR YOU</h6>
+                <h3>Explore Solutions</h3>
+                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis
+                    dapibus nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</p>
+            </div>
+            <div class="solution__down row">
+                <div class="solution__item col-lg-4 col-md-6 col-12">
+                    <div class="solution__item__content">
+                        <a class="solution__img" href="#">
+                            <img src="./image/b1.jpg" alt="b1">
+                            <p>26 Jan, 2020</p>
+                        </a>
+                        <div class="solution__info">
+                            <label class="label__1">Business</label>
+                            <a href="#">
+                                <h4>Corporate, Business & Digital Agency</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde
+                                earum...</p>
+                            <a class="solution__btn" href="#">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution__item col-lg-4 col-md-6 col-12">
+                    <div class="solution__item__content">
+                        <a class="solution__img" href="#">
+                            <img src="./image/b7.jpg" alt="b1">
+                            <p>15 Apr, 2020</p>
+                        </a>
+                        <div class="solution__info">
+                            <label class="label__2">Design</label>
+                            <a href="#">
+                                <h4>Corporate, Business & Digital Agency</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde
+                                earum...</p>
+                            <a class="solution__btn" href="#">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution__item col-lg-4 col-md-6 col-12">
+                    <div class="solution__item__content">
+                        <a class="solution__img" href="#">
+                            <img src="./image/b3.jpg" alt="b1">
+                            <p>25 Jun, 2020</p>
+                        </a>
+                        <div class="solution__info">
+                            <label class="label__3">Industry</label>
+                            <a href="#">
+                                <h4>Corporate, Business & Digital Agency</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet nostrum ad minus libero fugiat molestiae ullam ipsam quas unde
+                                earum...</p>
+                            <a class="solution__btn" href="#">
+                                <span>Know More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="abc">
 
-    </section>
-
-
-    <!-- JQUERY -->
+    <!---------------------------------------- JQUERY---------------------------------------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- BS4 JS -->
+
+    <!---------------------------------------- COUNT-NUMBER-ABOUT ---------------------------------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"
+        integrity="sha512-oy0NXKQt2trzxMo6JXDYvDcqNJRQPnL56ABDoPdC+vsIOJnU+OLuc3QP3TJAnsNKXUXVpit5xRYKTiij3ov9Qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/jquery.countup.min.js"></script>
+
+    <script>
+        $('.counter').countUp();
+    </script>
+
+    <!---------------------------------------- BS4 JS ---------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
 
+    <!---------------------------------------- SWITCH-THEME ---------------------------------------->
+    <script src="./js/switchTheme.js"></script>
+
+    <!---------------------------------------- HEADER SCROLL ---------------------------------------->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("header").classList.add("headerMaster1");
+            } else {
+                document.getElementById("header").classList.remove("headerMaster1");
+            }
+        }
+    </script>
+    
+    <!---------------------------------------- BUTTON SWITCH HEADER ---------------------------------------->
+    <script>
+        function buttonSwitchMenu() {
+            document.getElementById("idSwitchButtonMenu").classList.toggle("switchMenu");
+        }
+    </script>
 </body>
+
 </html>
