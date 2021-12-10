@@ -15,15 +15,13 @@
 html {
     font-size: 10px;
 }
-<<<<<<< HEAD
-h2,h3,h4,h6 {
-=======
 
 body {
->>>>>>> ThuyNgoc
     font-family: 'Nunito', sans-serif;
 }
-
+h2,h3,h4,h6 {
+    font-family: 'Nunito', sans-serif;
+}
 img {
     display: block;
     width: 100%;
@@ -36,7 +34,6 @@ li {
 a {
     text-decoration: none;
 }
-<<<<<<< HEAD
 a:hover {
     text-decoration: none;
 }
@@ -766,268 +763,6 @@ body .headerMaster1 {
 }
 
 
-/* -------------------------------------- FIX CONTAINER-FLUID -------------------------------------- */
-
-@media screen and (min-width:576px) {
-    .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
-    }
-}
-@media screen and (min-width:768px) {
-    .container-fluid {
-    padding-left: 25px;
-    padding-right: 25px;
-    }
-}
-@media screen and (min-width:992px) {
-    .container-fluid {
-    padding-left: 25px;
-    padding-right: 25px;
-    }
-}
-@media screen and (min-width:1200px) {
-    .container-fluid {
-    max-width: 1200px;
-    padding-left: 25px;
-    padding-right: 25px;
-    }
-}
-
-/* -------------------------------------- MEDIA QUERY - CONTENT -------------------------------------- */
-@media screen and (max-width:991px) {
-    /* Header */
-    .masterMenu {
-        padding: 1.5rem 0;
-    }
-    .masterMenu .nav-link{
-        padding: 0.8rem 0;
-        display: inline-block;
-    }
-    .masterMenu .navbar {
-        text-align: center;
-    }
-    .masterMenu .nav-item {
-        width: 100%;
-    }
-    .masterMenu .dropdown-menu {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-        transform: translateX(0);
-    }
-    .masterMenu .dropdown-item {
-        margin: 0 auto;
-        width: unset;
-    }
-    .masterMenu .nav-link::after {
-        bottom: 0;
-        left: 0;
-    }
-    #switchButton {
-        top: 2px;
-    }
-    body .headerMaster1 {
-        padding: 10px 0;
-    }
-    .masterMenu .navbar-nav{
-        padding: 20px 0;
-    }
-    .masterMenu form {
-        margin-left: 0;
-        margin-top: 1.6rem;
-    }
-    .dark .masterMenu .collapse {
-        background-color: #222;
-    }
-    .dark .dropdown-menu::before,.dark .dropdown-menu {
-        background-color: #151515;
-    }
-    .dark .dropdown-item span{
-        color: #fff;
-    }
-    .dark .dropdown-item:hover {
-        background-color: #151515;
-    }
-    /* Start */
-    .start {
-        margin-top: 7rem;
-    }
-    .start__left p {
-        margin-bottom: 2.4rem;
-    }
-    .start__right {
-        margin-top: 4.8rem;
-    }
-    /* Tool */
-    .tool__item:last-of-type .tool__item__content {
-        margin-top: 4.8rem;
-    }
-    .tool__top h3 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-    .tool__content {
-        padding-top: 0;
-    }
-    /* About */
-
-    .about__content {
-        padding: 0;
-    }
-    .about__top {
-        padding-bottom: 7.2rem;
-    }
-    .about__top--content{
-        padding: 0 1.5rem;
-    }
-    .about__top--img {
-        padding: 4.8rem 1.5rem 0 1.5rem;
-    }
-    .about__down{
-        padding: 0;
-    }
-    .about__item:last-of-type  {
-        margin-top: 4.8rem;
-    }
-    .about__item__content h4 {
-        font-size: 1.8rem;
-    }
-    .about__counter {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-    /* Solution */
-    .solution__item:last-of-type {
-        margin-left: 25%;
-        margin-top: 4.8rem;
-    }
-    .solution__top {
-        padding-top: 0;
-    }
-    .solution{
-        padding-bottom: 6.4rem;
-    }
-}
-@media screen and (max-width:800px) {
-    /* commit */
-    .commit__content .btn{
-        margin-top: 40px;
-    }
-    /* Solution */
-    .solution__top h3 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-}
-@media screen and (max-width:767px) {
-    /* Header */
-    body .headerMaster1 {
-        padding: 10px 0;
-    }
-    /* Start */
-    .start__left .btn {
-        padding: 0 20px;
-        line-height: 44px;
-    }
-    .tool__down {
-        margin-top: 1.6rem;
-    }
-    .tool__item__content {
-        margin-top: 4.8rem;
-    }
-    /* Tool */
-    .tool__top h3 {
-        font-size: 3.2rem;
-        line-height: 4.2rem;
-    }
-    .tool__content {
-        padding-bottom: 0;
-    }
-    /* About */
-
-    .about__down .about__item {
-        margin-top: 4.8rem;
-    }
-    .about__top--content p {
-        margin: 1.6rem 0 2.4rem;
-    }
-    .about__top--content .btn {
-        padding: 0 20px;
-        line-height: 44px;
-    }
-    .about__top {
-        padding-bottom: 2.4rem;
-    }
-    .about__item__content h4 {
-        font-size: 1.7rem;
-    }
-    /* commit */
-    .commit__content .btn{
-        padding: 0 20px;
-        line-height: 44px;
-    }
-    .commit p {
-        padding: 1.6rem 0 2.4rem;
-    }
-    /* Solution */
-    .solution__down .solution__item {
-        margin-top: 4.8rem;
-        margin-left: 0;
-    }
-    .solution__down {
-        margin-top: 0;
-    }
-}
-@media screen and (max-width:667px) {
-    /* commit */
-    .commit p {
-        font-size: 15px;
-        line-height: 22px;
-    }
-    .commit__content .btn{
-        margin-top: 30px;
-    }
-    /* Solution */
-    .solution__top h3 {
-        font-size: 3.2rem;
-        line-height: 4.2rem;
-    }
-}
-@media screen and (max-width:575px) {
-    /* Header */
-    .masterMenu .navbar {
-        padding: 0 15px;
-    }
-    /* Start */
-    .start__left h3 {
-        font-size: 4rem;
-        line-height: 4.5rem;
-    }
-    /* About */
-    .about__down .about__item {
-        margin-top: 2.4rem;
-    }
-    .about__top {
-        padding-bottom: 4.8rem;
-    }
-}
-@media screen and (max-width:440px) {
-    /* commit */
-    .commit h2{
-        font-size: 26px;
-    }
-}
-@media screen and (max-width:375px) {
-    /* Start */
-    .start__left h3 {
-        font-size: 3.5rem;
-        line-height: 4.5rem;
-    }
-}
-=======
-
-
 
 
 
@@ -1037,10 +772,6 @@ h1 {
     text-align: center;
 }
 
-
-* {
-    box-sizing: border-box;
-}
 
 
 /* QUESTION */
@@ -1392,9 +1123,6 @@ h2.resp-accordion{
     width: 40px;
     height: 5px;
     opacity: 1;
-
-
-
 }
 
 .say__content .slick-dots li.slick-active button::before {
@@ -1472,7 +1200,6 @@ h2.resp-accordion{
     font-size: 15px;
     line-height: 25px;
     padding: 0;
-
 }
 
 .letter__content {
@@ -1544,7 +1271,6 @@ h2.resp-accordion{
     padding-top: 20px;
     margin-top: 40px;
     border-top: 1px solid #eeeff0;
-
 }
 
 .footer__social li {
@@ -1570,39 +1296,293 @@ h2.resp-accordion{
     font-size: 15px;
 }
 
+/* BACKTOP */
+.backtop {
+    display: block;
+    width: 5rem;
+    height: 4.5rem;
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: white;
+    background-color: #dc4f72;
+    position: fixed;
+    right: 0;
+    bottom: 7.5rem;
+    opacity: 0.7;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+.cd-top--is-visible { 
+    visibility: visible;
+}
+.backtop:hover{
+    opacity: 1;
+    color: #fff;
+}
+/* -------------------------------------- FIX CONTAINER-FLUID -------------------------------------- */
 
-/* RESPONSIVE */
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 100%;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+@media screen and (min-width:576px) {
+    .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+}
+@media screen and (min-width:768px) {
+    .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+@media screen and (min-width:992px) {
+    .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container-fluid {
+    max-width: 1200px;
+    padding-left: 25px;
+    padding-right: 25px;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
+
+
+/* -------------------------------------- MEDIA QUERY - CONTENT -------------------------------------- */
+@media screen and (max-width:991px) {
+    /* Header */
+    .masterMenu {
+        padding: 1.5rem 0;
+    }
+    .masterMenu .nav-link{
+        padding: 0.8rem 0;
+        display: inline-block;
+    }
+    .masterMenu .navbar {
+        text-align: center;
+    }
+    .masterMenu .nav-item {
+        width: 100%;
+    }
+    .masterMenu .dropdown-menu {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        transform: translateX(0);
+    }
+    .masterMenu .dropdown-item {
+        margin: 0 auto;
+        width: unset;
+    }
+    .masterMenu .nav-link::after {
+        bottom: 0;
+        left: 0;
+    }
+    #switchButton {
+        top: 2px;
+    }
+    body .headerMaster1 {
+        padding: 10px 0;
+    }
+    .masterMenu .navbar-nav{
+        padding: 20px 0;
+    }
+    .masterMenu form {
+        margin-left: 0;
+        margin-top: 1.6rem;
+    }
+    .dark .masterMenu .collapse {
+        background-color: #222;
+    }
+    .dark .dropdown-menu::before,.dark .dropdown-menu {
+        background-color: #151515;
+    }
+    .dark .dropdown-item span{
+        color: #fff;
+    }
+    .dark .dropdown-item:hover {
+        background-color: #151515;
+    }
+    /* Start */
+    .start {
+        margin-top: 7rem;
+    }
+    .start__left p {
+        margin-bottom: 2.4rem;
+    }
+    .start__right {
+        margin-top: 4.8rem;
+    }
+    /* Tool */
+    .tool__item:last-of-type .tool__item__content {
+        margin-top: 4.8rem;
+    }
+    .tool__top h3 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .tool__content {
+        padding-top: 0;
+    }
+    /* About */
+
+    .about__content {
+        padding: 0;
+    }
+    .about__top {
+        padding-bottom: 7.2rem;
+    }
+    .about__top--content{
+        padding: 0 1.5rem;
+    }
+    .about__top--img {
+        padding: 4.8rem 1.5rem 0 1.5rem;
+    }
+    .about__down{
+        padding: 0;
+    }
+    .about__item:last-of-type  {
+        margin-top: 4.8rem;
+    }
+    .about__item__content h4 {
+        font-size: 1.8rem;
+    }
+    .about__counter {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    /* Solution */
+    .solution__item:last-of-type {
+        margin-left: 25%;
+        margin-top: 4.8rem;
+    }
+    .solution__top {
+        padding-top: 0;
+    }
+    .solution{
+        padding-bottom: 6.4rem;
+    }
+}
+@media screen and (max-width:800px) {
+    /* commit */
+    .commit__content .btn{
+        margin-top: 40px;
+    }
+    /* Solution */
+    .solution__top h3 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+@media screen and (max-width:767px) {
+    /* Header */
+    body .headerMaster1 {
+        padding: 10px 0;
+    }
+    /* Start */
+    .start__left .btn {
+        padding: 0 20px;
+        line-height: 44px;
+    }
+    .tool__down {
+        margin-top: 1.6rem;
+    }
+    .tool__item__content {
+        margin-top: 4.8rem;
+    }
+    /* Tool */
+    .tool__top h3 {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+    .tool__content {
+        padding-bottom: 0;
+    }
+    /* About */
+
+    .about__down .about__item {
+        margin-top: 4.8rem;
+    }
+    .about__top--content p {
+        margin: 1.6rem 0 2.4rem;
+    }
+    .about__top--content .btn {
+        padding: 0 20px;
+        line-height: 44px;
+    }
+    .about__top {
+        padding-bottom: 2.4rem;
+    }
+    .about__item__content h4 {
+        font-size: 1.7rem;
+    }
+    /* commit */
+    .commit__content .btn{
+        padding: 0 20px;
+        line-height: 44px;
+    }
+    .commit p {
+        padding: 1.6rem 0 2.4rem;
+    }
+    /* Solution */
+    .solution__down .solution__item {
+        margin-top: 4.8rem;
+        margin-left: 0;
+    }
+    .solution__down {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:667px) {
+    /* commit */
+    .commit p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .commit__content .btn{
+        margin-top: 30px;
+    }
+    /* Solution */
+    .solution__top h3 {
+        font-size: 3.2rem;
+        line-height: 4.2rem;
+    }
+}
+@media screen and (max-width:575px) {
+    /* Header */
+    .masterMenu .navbar {
+        padding: 0 15px;
+    }
+    /* Start */
+    .start__left h3 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    /* About */
+    .about__down .about__item {
+        margin-top: 2.4rem;
+    }
+    .about__top {
+        padding-bottom: 4.8rem;
+    }
+}
+@media screen and (max-width:440px) {
+    /* commit */
+    .commit h2{
+        font-size: 26px;
+    }
+}
+@media screen and (max-width:375px) {
+    /* Start */
+    .start__left h3 {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
     }
 }
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
 
 
 
->>>>>>> ThuyNgoc
+
