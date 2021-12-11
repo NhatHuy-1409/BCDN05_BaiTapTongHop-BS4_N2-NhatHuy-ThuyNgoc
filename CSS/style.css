@@ -1497,9 +1497,17 @@ h2.resp-accordion {
 .dark .footer__main p a{
     color:grey;
 }
+
+.dark .footer__main p a:hover{
+    color:#dc4f72
+}
 .dark .footer__social li a{
     color:#fff;
 }
+.dark .footer__social li a:hover{
+    color:#dc4f72;
+}
+
 
 .dark .letter__content{
     background-color: grey;
@@ -1566,8 +1574,7 @@ h2.resp-accordion {
         max-width: 100%;
         padding-left: 25px;
         padding-right: 25px;
-        margin-right: auto;
-        margin-left: auto;
+      
     }
 }
 
