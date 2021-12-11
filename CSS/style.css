@@ -890,16 +890,11 @@ body .headerMaster1 {
 }
 
 
-
-
-
 h1 {
     margin: 50px 0 20px;
     font-weight: 100;
     text-align: center;
 }
-
-
 
 /* QUESTION */
 .question {
@@ -928,7 +923,6 @@ h1 {
     font-weight: 700;
 }
 
-
 .dark .header-section h3, .dark .header-section p{
     color:#fff;
 }
@@ -943,9 +937,6 @@ h1 {
     margin-right: auto;
     margin-top: 5px;
 }
-
-
-
 
 .question__img {
     position: sticky;
@@ -969,10 +960,7 @@ h1 {
     border-radius: 6px;
     background-color: #fff;
     border: 1px solid #eee;
-
-
 }
-
 
 .checkbox_collapse .panel-body {
     padding-left: 18px;
@@ -1623,45 +1611,36 @@ h2.resp-accordion {
     .masterMenu {
         padding: 1.5rem 0;
     }
-
     .masterMenu .nav-link {
         padding: 0.8rem 0;
         display: inline-block;
     }
-
     .masterMenu .navbar {
         text-align: center;
     }
-
     .masterMenu .nav-item {
         width: 100%;
     }
-
     .masterMenu .dropdown-menu {
         width: 100%;
         text-align: center;
         margin: 0 auto;
         transform: translateX(0);
     }
-
     .masterMenu .dropdown-item {
         margin: 0 auto;
         width: unset;
     }
-
     .masterMenu .nav-link::after {
         bottom: 0;
         left: 0;
     }
-
     #switchButton {
         top: 2px;
     }
-
     body .headerMaster1 {
         padding: 10px 0;
     }
-
     .masterMenu .navbar-nav {
         padding: 20px 0;
     }
@@ -1670,7 +1649,6 @@ h2.resp-accordion {
         margin-left: 0;
         margin-top: 1.6rem;
     }
-
     .dark .masterMenu .collapse {
         background-color: #222;
     }
@@ -1682,7 +1660,6 @@ h2.resp-accordion {
     .dark .dropdown-item span {
         color: #fff;
     }
-
     .dark .dropdown-item:hover {
         background-color: #151515;
     }
