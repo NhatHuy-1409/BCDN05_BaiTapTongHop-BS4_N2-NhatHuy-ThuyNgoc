@@ -1351,6 +1351,36 @@ h2.resp-accordion {
     border-color: #cf2952;
 }
 
+
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(220 79 114 / 50%);
+}
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgb(220 79 114 / 50%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem rgb(225 105 135 / 50%);
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #cf2952;
+    border-color: #c4274e;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #dc4f72;
+    border-color: #dc4f72;
+    box-shadow: 0 0 0 0.2rem rgb(225 105 135 / 50%);
+}
+
 /* FOOTER */
 
 .footer__main {
