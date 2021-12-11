@@ -908,6 +908,10 @@ h1 {
 
 }
 
+.dark .question{
+    background:#151515;
+}
+
 .sub-title {
     font-size: 16px;
     line-height: 20px;
@@ -924,6 +928,12 @@ h1 {
     font-weight: 700;
 }
 
+
+.dark .header-section h3, .dark .header-section p{
+    color:#fff;
+}
+
+
 .header-section p {
     color: #5a5a5a;
     font-size: 16px;
@@ -933,6 +943,7 @@ h1 {
     margin-right: auto;
     margin-top: 5px;
 }
+
 
 
 
@@ -961,6 +972,7 @@ h1 {
 
 
 }
+
 
 .checkbox_collapse .panel-body {
     padding-left: 18px;
@@ -1059,10 +1071,14 @@ h1 {
     width: 33.333%;
     text-align: center;
     color: #4E5B61;
-    background: #fff !important;
+    background-color: #fff !important;
     border-bottom: 3px solid #eee;
 }
 
+.dark .resp-tabs-container,.dark .resp-tabs-list li{
+    background-color: #222 !important;
+    color:#fff;
+    }
 .resp-tab-active {
     border-bottom: none;
     background-color: #fff;
@@ -1098,6 +1114,8 @@ h2.resp-accordion {
 
 .projects .products-content {
     margin: 20px 0;
+
+
 }
 
 .resp-tab-content {
@@ -1107,6 +1125,12 @@ h2.resp-accordion {
 .resp-tab-content {
     display: none;
     padding: 15px;
+}
+.dark .projects .products-content h3{
+    color:#fff;
+}
+.dark .projects .products-content p{
+    color:#eef;
 }
 
 .projects .products-content h3 {
@@ -1141,12 +1165,11 @@ h2.resp-accordion {
         border: 1px solid #c1c1c1;
         margin: 0px;
         padding: 10px 15px;
-    }
 
-
-    .resp-vtabs .resp-tab-content {
-        border: 1px solid #C1C1C1;
     }
+.dark h2.resp-accordion{
+    background-color: #222 !important
+}
 
     .resp-vtabs .resp-tabs-container {
         border: none;
@@ -1154,6 +1177,8 @@ h2.resp-accordion {
         width: 100%;
         min-height: initial;
         clear: none;
+
+
     }
 
     .resp-accordion-closed {
@@ -1162,6 +1187,13 @@ h2.resp-accordion {
 
     .resp-vtabs .resp-tab-content:last-child {
         border-bottom: 1px solid #c1c1c1 !important;
+    }
+
+    .projects .products-content {
+        margin: 0;
+        border-left: 1px solid #c1c1c1;
+        border-right: 1px solid #c1c1c1;
+        padding: 15px;
     }
 }
 
@@ -1173,6 +1205,20 @@ h2.resp-accordion {
     background-position: center;
     background-attachment: fixed;
     padding: 60px 0;
+}
+
+.dark .say{
+     background-image:  url(../image/dark.jpg);
+
+}
+
+.dark .say__slider{
+    background-color: #222;
+    
+}
+
+.dark .say__message p, .dark .say__message span{
+    color:#fff;
 }
 
 
@@ -1348,6 +1394,7 @@ h2.resp-accordion {
     font-weight: 500;
 }
 
+
 .footer__main form {
     display: flex;
     margin-bottom: 15px;
@@ -1391,6 +1438,8 @@ h2.resp-accordion {
     text-decoration: none;
 }
 
+
+
 .footer__main p a:hover {
     color: #eaa5b7;
 }
@@ -1425,6 +1474,39 @@ h2.resp-accordion {
 
 .footer__social li a i {
     font-size: 15px;
+}
+
+
+.dark .footer__main{
+    background-color: #151515;
+   
+}
+
+.dark .footer__main h3{
+    color:#fff;
+}
+
+.dark .footer__list li a{
+    color:#fff;
+}
+
+
+.dark .footer__main p{
+    color:#fff;
+}
+.dark .footer__main p a{
+    color:grey;
+}
+.dark .footer__social li a{
+    color:#fff;
+}
+
+.dark .letter__content{
+    background-color: grey;
+}
+
+.dark .letter__content h4{
+    color:#fff;
 }
 
 /* BACKTOP */
@@ -1472,49 +1554,28 @@ h2.resp-accordion {
 
 @media screen and (min-width:992px) {
     .container-fluid {
+        max-width: 100%;
         padding-left: 25px;
         padding-right: 25px;
+       
     }
 }
 
 @media screen and (min-width:1200px) {
     .container-fluid {
-        max-width: 1200px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-}
-
-
-@media (min-width: 992px) {
-    .container {
         max-width: 100%;
-        padding-right: 25px;
         padding-left: 25px;
+        padding-right: 25px;
         margin-right: auto;
         margin-left: auto;
     }
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding-right: 25px;
-        padding-left: 25px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
 
-@media (min-width: 576px) {
-    .container {
-        max-width: 100%;
-        padding-right: 30px;
-        padding-left: 30px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
+
+
+
+
 
 
 
@@ -1829,17 +1890,19 @@ h2.resp-accordion {
         grid-template-columns: 1fr;
         grid-gap: 30px;
     }
-    .say__img--circle{
-        margin:auto;
-    
+
+    .say__img--circle {
+        margin: auto;
+
     }
-    .say__message p,.say__name{
+
+    .say__message p, .say__name {
         text-align: center;
     }
 
-    .say__message span{
+    .say__message span {
         text-align: center;
-        padding-left:40px;
+        padding-left: 40px;
     }
 }
 
@@ -1850,7 +1913,7 @@ h2.resp-accordion {
 }
 
 @media (max-width: 992px) {
-    .footer__icon{
+    .footer__icon {
         flex-direction: column;
     }
 }
